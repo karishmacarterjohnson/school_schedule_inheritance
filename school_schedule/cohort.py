@@ -7,5 +7,8 @@ class Cohort:
         for student in self.students:
             print(student.summary())
 
-    def class_list(self,class_name):
-        return [student.name for student in self.students if student.class_name == class_name]
+    def homeroom_class_list(self,homeroom_name):
+        return [student.name for student in self.students if student.class_name == homeroom_name]
+
+    def class_list(self, class_name):
+        return [student.name for student in self.students if class_name in student.classes]

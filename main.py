@@ -41,4 +41,6 @@ for student in students:
 
 
 cohort = Cohort(cohort_name = "C16", students = students)
-print(cohort.class_list(class_name = "Maple"))
+print(cohort.homeroom_class_list(homeroom_name = "Maple"))
+
+print(cohort.class_list(class_name = "Gym"))
