@@ -1,8 +1,9 @@
 class Student:
-    def __init__(self, name, grade, classes):
+    def __init__(self, name, grade, classes, class_name):
         self.name = name
         self.grade = grade
         self.classes = classes
+        self.class_name = class_name
 
     def add_class(self, class_name):
         self.classes.append(class_name)

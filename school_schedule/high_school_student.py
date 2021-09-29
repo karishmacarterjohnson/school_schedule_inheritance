@@ -1,10 +1,10 @@
 from .student import Student
 
 class HighSchoolStudent(Student):
-    def __init__(self, name, grade, classes,
+    def __init__(self, name, grade, classes,class_name,
         has_parking_privileges=False, clubs=None):
 
-        super().__init__(name, grade, classes)
+        super().__init__(name, grade, classes,class_name)
         self.has_parking_privileges = has_parking_privileges
         self.clubs = clubs if clubs is not None else []
 
